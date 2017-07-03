@@ -18,4 +18,7 @@ public class SenhaCareTaker {
 		mementos.remove(mementos.size() - 1);
 		return estadoSalvo;
 	}
+	public ArrayList<SenhaMemento> getTodasSenhas(){
+		return this.mementos;
+	}
 }
