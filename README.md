@@ -1,2 +1,2 @@
-# trabalho_final_memento_prototype
+# Trabalho Final Memento Prototype
 Trabalho Final de PSI
