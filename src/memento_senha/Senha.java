@@ -1,5 +1,8 @@
 package memento_senha;
 
+import java.util.List;
+import java.util.ArrayList;
+
 public class Senha {
 	protected String senha;
 	SenhaCareTaker caretaker;
@@ -16,6 +19,14 @@ public class Senha {
 	}
 	public void exibirSenha(){
 		System.out.println(senha);
+	}
+	public void senhaMaisRecente(){
+		ArrayList<SenhaMemento> saida = caretaker.getTodasSenhas();
+		System.out.println(saida.get(1).getEstadoMemento());
+	}
+	public void senhaMaisAntiga(){
+		ArrayList<SenhaMemento> saida = caretaker.getTodasSenhas();
+		System.out.println(saida.get(saida.size() - 1 ).getEstadoMemento());
 	}
 	//Método para exibir todas as senhas armazenadas
 	public void todasSenhas(){

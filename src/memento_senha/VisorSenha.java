@@ -15,6 +15,7 @@ public class VisorSenha {
 		//senha.voltarSenha();
 		senha.exibirSenha();
 		senha.todasSenhas();
+		senha.senhaMaisAntiga();
+		senha.senhaMaisRecente();
 	}
-
 }
