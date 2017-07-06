@@ -20,16 +20,19 @@ public class Senha {
 	public void exibirSenha(){
 		System.out.println(senha);
 	}
-	public void senhaMaisRecente(){
+	public void senhaMaisAntiga(){
+		System.out.println("Senha mais antiga");
 		ArrayList<SenhaMemento> saida = caretaker.getTodasSenhas();
 		System.out.println(saida.get(1).getEstadoMemento());
 	}
-	public void senhaMaisAntiga(){
+	public void senhaPenultima(){
+		System.out.println("Penúltima senha");
 		ArrayList<SenhaMemento> saida = caretaker.getTodasSenhas();
-		System.out.println(saida.get(saida.size() - 1 ).getEstadoMemento());
+		System.out.println(saida.get(saida.size()-1).getEstadoMemento());
 	}
 	//Método para exibir todas as senhas armazenadas
 	public void todasSenhas(){
+		System.out.println("Acessando as senha anteriores:");
 		int tamanhoArray = caretaker.getTodasSenhas().size();
 		System.out.println("------");
 		System.out.println("Senha atual: "+ this.senha);

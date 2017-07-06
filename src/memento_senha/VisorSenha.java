@@ -12,10 +12,15 @@ public class VisorSenha {
 		senha.exibirSenha();
 		senha.novaSenha("LLP");
 		senha.exibirSenha();
-		//senha.voltarSenha();
-		senha.exibirSenha();
 		senha.todasSenhas();
 		senha.senhaMaisAntiga();
-		senha.senhaMaisRecente();
+		senha.senhaPenultima();
+		senha.voltarSenha();
+		senha.exibirSenha();
+		senha.voltarSenha();
+		senha.exibirSenha();
+		senha.voltarSenha();
+		senha.exibirSenha();
+		
 	}
 }
